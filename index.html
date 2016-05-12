@@ -5,6 +5,28 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="Font-Awesome-master/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+     <script type="text/javascript" language="javascript">
+     	var flashvars={
+		f:'http://movie.ks.js.cn/flv/other/1_0.flv',
+		c:0,
+		b:1
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always'};
+	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
+	/*
+	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+	下面三行是调用html5播放器用到的
+	*/
+	var video=['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4'];
+	var support=['iPad','iPhone','ios','android+false','msie10+false','webKit'];
+	CKobject.embedHTML5('video','ckplayer_a1',1000,600,video,flashvars,support);
+     function click()
+     {
+
+     }
+        </script>
+
 </head>
 <body>
     <div class="main-wrapper">
@@ -13,16 +35,15 @@
 		    <div class="logo"><a href="#">Mr.wang</a></div>
 		    <ul>			
 		    <li  class="active"><a href="#">首页</a></li>
-			<li><a href="http://www.baidu.com">链接2</a></li>
-			<li><a href="#">链接3</a></li>
-			<li><a href="#">链接4</a></li>
+			<li><a href="wy_02.html">个人简历</a></li>
+			<li><a href="#">我的博客</a></li>
 			</ul>
 	  </nav>
       <div id="banner">
       	<div class="inner">
-      		<h1><font size="6" color="#CE9E7C" face="微软雅黑">新 世 界</font></h1>
-      		<p class="sub-heading">奋斗，努力，fighting！</p>
-      		<button id="directNextpage" onclick="">了解我</button>
+      		<h1><font size="6" color="#CE9E7C" face="微软雅黑">我 的 新 世 界</font></h1>
+      		<p class="sub-heading"><font size="3" color="#020202" face="微软雅黑">奋斗，努力，fighting！</font></p>
+      		<button id="directNextpage" onclick="wy_02.html">了解我</button>
       		<div class="more">
       			更多
       		</div>
@@ -157,8 +178,6 @@
               switchSlider(1);
 
             }
-
-
         </script>
 
 
