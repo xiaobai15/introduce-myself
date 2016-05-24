@@ -5,27 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="Font-Awesome-master/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
-     <script type="text/javascript" language="javascript">
-     	var flashvars={
-		f:'http://movie.ks.js.cn/flv/other/1_0.flv',
-		c:0,
-		b:1
-		};
-	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always'};
-	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
-	/*
-	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
-	下面三行是调用html5播放器用到的
-	*/
-	var video=['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4'];
-	var support=['iPad','iPhone','ios','android+false','msie10+false','webKit'];
-	CKobject.embedHTML5('video','ckplayer_a1',1000,600,video,flashvars,support);
-     function click()
-     {
-
-     }
-        </script>
+ 
 
 </head>
 <body>
@@ -54,14 +34,14 @@
    	  <section class="green-section">
    	  	<div class="wrapper">
    	  		<div>
-   	  			<h2>一个标题</h2>
+   	  			<h2>我喜欢的书籍类型</h2>
    	  			<div class="hr"></div>
-   	  			<p class="sub-heading">lkjsldflnlkgj jglakdnglasjd asdjlksjgl sd.</p>
+   	  			<p class="sub-heading">看到天下的事情，才能知道未来的自己</p>
    	  		</div>
    	  		<div class="icon-group">
-   	  			<span class="icon">item1</span>
-   	  			<span class="icon">item2</span>
-   	  			<span class="icon">item3</span>
+   	  			<span class="icon">文学</span>
+   	  			<span class="icon">小说</span>
+   	  			<span class="icon">新闻</span>
    	  		</div>
    	  	</div>
    	 </section>
@@ -85,7 +65,7 @@
           </div>
         </div>
         <script type="text/javascript" language="javascript">
-            //1.数据定义（生产环境中由后台给出，模板）
+            //1.数据定义
           var data =[
             { img:1 },
             { img:2 },
@@ -182,9 +162,12 @@
 
 
         <div class="text-section">
-        	<h2>又一个标题</h2>
-        	<div class="sub-heading">我是副标题，你好</div>
-        	<p>sdfsfasfasfa</p>
+        	<h2>我，名叫王宇</h2>
+        	<div class="sub-heading">左边的照片是我和我的朋友们</div>
+        	<p>我喜欢游泳</p>
+        	<p>我喜欢健身</p>
+        	<p>我喜欢动物</p>
+        	<p>我喜欢交朋友</p>
         </div>
         </div> 
 
@@ -192,37 +175,55 @@
    	  <section class="purple-section">
    	  <div class="wrapper">
    	  	<div class="heading-wrapper">   	  	  
-   	  	<h2>另外一个标题</h2>
+   	  	<h2>我还会这些IT技术</h2>
    	  	  <div class="hr">
    	  	  </div>
    	  	  <div class="sub-heading">
-   	  	  	sdfsafsafasdfjkdjfadf lasdkfsd s fsdf asdf d fd add fsdfajsd lfdalksd lfj lksd jflas djflkadsj flkasj ?
+   	  	  	通过学习我掌握了一下知识
    	  	  </div>
    	  	  </div>
    	  	  <div class="card-group clearfix">
    	  	  	<div class="card">
-   	  	  		<h3><font  face="幼圆">标题三</font> </h3>
-   	  	  		<p>sdfdsfsafafa</p>
+   	  	  		<h3><font  face="幼圆">HTML5</font> </h3>
+   	  	  		<p>世界上最流行的语言</p>
+   	  	  		<div class="photo">
+   	  	  			<img src="img/p1.jpg">
+   	  	  		</div>
    	  	  	</div>
    	  	  	<div class="card">
-   	  	  		<h3><font face="幼圆">标题三</font> </h3>
-   	  	  		<p>sdfdsfsafafa</p>
+   	  	  		<h3><font face="幼圆">数据库</font> </h3>
+   	  	  		   	  	  		<p>世界上最流行的语言</p>
+   	  	  		<div class="photo">
+   	  	  			<img src="img/p3.jpg">
+   	  	  		</div>
    	  	  	</div>
             <div class="card">
-              <h3><font face="幼圆">标题三</font>  </h3>
-              <p>sdfdsfsafafa</p>
+              <h3><font face="幼圆">JAVA</font>  </h3>
+                 	  	  		<p>世界上最流行的语言</p>
+   	  	  		<div class="photo">
+   	  	  			<img src="img/p2.jpg">
+   	  	  		</div>
             </div>
             <div class="card">
-              <h3><font face="幼圆">标题三</font>  </h3>
-              <p>sdfdsfsafafa</p>
+              <h3><font face="幼圆">计算机网络</font>  </h3>
+              <p>世界上最流行的语言</p>
+   	  	  		<div class="photo">
+   	  	  			<img src="img/p3.jpg">
+   	  	  		</div>
             </div>
             <div class="card">
-              <h3><font face="幼圆">标题三</font> </h3>
-              <p>sdfdsfsafafa</p>
+              <h3><font face="幼圆">数据结构</font> </h3>
+              <p>世界上最流行的语言</p>
+   	  	  		<div class="photo">
+   	  	  			<img src="img/p1.jpg">
+   	  	  		</div>
             </div>
             <div class="card">
-              <h3><font face="幼圆">标题三</font> </h3>
-              <p>sdfdsfsafafa</p>
+              <h3><font face="幼圆">PHP</font> </h3>
+              <p>世界上最流行的语言</p>
+   	  	  		<div class="photo">
+   	  	  			<img src="img/p1.jpg">
+   	  	  		</div>
             </div>
    	  	  </div>
    	  	  
